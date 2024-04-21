@@ -29,7 +29,7 @@ body {
 }
 header {
     position: relative;
-    background-image: url(../img/шапка-верх.png);
+    background-image: url(img/шапка-верх.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -71,7 +71,7 @@ main {
     max-width: 1440px;
     margin: auto;
     margin-top: -20px;
-    background-image: url(../img/House.png);
+    background-image: url(img/House.png);
     background-size: 1440px;
     height: 600px;
     background-repeat: no-repeat;

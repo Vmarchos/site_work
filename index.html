@@ -11,17 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
-        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="scroll-to-top" id="scrollToTopBtn">Наверх</div>
+
     <header>
 
         <div class="header_container">
             <nav class="header_nav-contact">
                 <ul class="header_contact">
-                    <li id="site"><a href="#site">DOMNAVEK.BY</a> </li>
+                    <li id="site"><a href="#site">
+                            <h6>DOMNAVEK.BY</h6>
+                        </a> </li>
                     <li><a href="tel:+37529-234-14-27">+37529-234-14-27 </a>(МТС)</li>
                     <li> <a href="tel:+37529-924-55-47">+37529-924-55-47 </a>(А1)</li>
                 </ul>
@@ -287,7 +289,12 @@
             <h1 id="articles_id">Статьи</h1>
             <div class="articles_list" id="articles_list-one">
                 Статья 1. Нужно ли экономить на фундаменте дома.
-                <div class="articles_text" id="articles_text-one">Давайте разберемся по порядку.
+                <div class="articles_text" id="articles_text-one">
+                    <div class="menu_close" id="menu_close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    Давайте разберемся по порядку.
                     Во-первых, экономия должна быть оправдана и подкреплена необходимыми исходными данными
                     (инженерно-геологическими изысканиями, отсутствием насыпных грунтов и высоких грунтовых вод и
                     прочее).
@@ -313,7 +320,7 @@
             <div class="articles_list" id="articles_list-two">
                 Статья 2. Зачем утеплять дом и как это скажется на комфорте.
                 <div class="articles_text" id="articles_text-two">
-                    <div class="menu_close">
+                    <div class="menu_close" id="menu_close_2">
                         <span></span>
                         <span></span>
                     </div>
@@ -416,16 +423,17 @@
         </div>
     </footer>
 </body>
+
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
 
-    // Next/previous controls
+
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
 
-    // Thumbnail image controls
+
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
@@ -449,17 +457,60 @@
 
 
 <script>
-    document.getElementById('articles_list-one').onclick = function () {
-        document.getElementById('articles_text-one').classList.toggle('articles_text-show');
-        document.getElementById('articles_list-one').classList.toggle('articles_list-show')
-    }
+    document.getElementById('articles_list-one').addEventListener('click', function () {
+        document.getElementById('articles_text-one').classList.add('articles_text-show');
+        document.getElementById('articles_list-one').classList.add('articles_list-show');
+    });
 
-    document.getElementById('articles_list-two').onclick = function () {
-        document.getElementById('articles_text-two').classList.toggle('articles_text-show');
-        document.getElementById('articles_list-two').classList.toggle('articles_list-show')
-    }
+    document.getElementById('menu_close').addEventListener('click', function (event) {
+
+        event.stopPropagation();
+
+        document.getElementById('articles_text-one').classList.remove('articles_text-show');
+        document.getElementById('articles_list-one').classList.remove('articles_list-show');
+    });
+
+    document.getElementById('articles_list-two').addEventListener('click', function () {
+        document.getElementById('articles_text-two').classList.add('articles_text-show');
+        document.getElementById('articles_list-two').classList.add('articles_list-show');
+    });
+
+    document.getElementById('menu_close_2').addEventListener('click', function (event) {
+
+        event.stopPropagation();
+
+        document.getElementById('articles_text-two').classList.remove('articles_text-show');
+        document.getElementById('articles_list-two').classList.remove('articles_list-show');
+    });
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+
+    scrollToTopBtn.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+
+    window.addEventListener("scroll", function () {
+
+        if (window.pageYOffset > 500) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+
+
+
+
 
 </script>
+
+
+
 
 
 </html>

@@ -36,11 +36,11 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  .scroll-to-top.show {
+}
+
+.scroll-to-top.show {
     display: block;
-  }
+}
 
 .header_container {
     display: flex;
@@ -48,35 +48,57 @@ body {
     margin: auto;
 }
 
-header {
-    position: relative;
-    background: url(img/шапка-верх.png) no-repeat center;
-    background-size: cover;
-}
-
 .header_contact {
     display: flex;
-    padding: 20px 0;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-right: 0px;
     list-style-type: none;
-    min-width: 720px;
-    margin-bottom: 20px;
+    margin: auto;
 }
+
 .header_contact h6 {
     font-size: 20px;
+}
+.header_contact li {
+    margin-right: 20px;
+}
+.header_contact li img {
+    width: 60px;
+}
+.box-search {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #535554;
+    margin-right: 30px;
+    height: 30px;
+}
+.box-search input[type="text"] {
+    width: 100%;
+    height: 30px;
+    background: 0 0;
+    padding-left: 15px;
+}
+.box-search input[type="submit"] {
+    margin-right: 0px;
+    border: none;
+    background: url(img/search.jpg) 50% 50% no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
 }
 
 .header_nav {
     display: flex;
     padding: 0 20px;
     margin-left: 0;
-    height: 50px;
+    height: 60px;
     position: relative;
-    min-width: 720px;
-    margin-left: -220px;
+    background-color: #ffebb7;
+}
+.header_nav-contact {
+    background-color: #f9d87f;
 }
 
 .header_nav-list {
@@ -89,6 +111,7 @@ header {
 }
 .header_nav-item {
     margin: 15px;
+    padding: 0 20px;
 }
 
 main {
@@ -197,7 +220,7 @@ main {
     margin-top: 20px;
     background-image: linear-gradient(to right, white, #fff9e9, white);
     height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .services_container {
@@ -235,7 +258,6 @@ main {
 .services_text_list {
     max-width: 1440px;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 .Completed_objects {
@@ -375,8 +397,11 @@ main {
     width: 550px;
     margin-left: 215px;
 }
+.articles_list h4 {
+    margin-left: 5px;
+}
 .articles_list-show {
-    width: 1000px;
+    width: 1010px;
 
     transition: 1s;
 }
@@ -399,7 +424,7 @@ main {
 .menu_close {
     position: relative;
     display: block;
-    width: 150px;
+    width: 40px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 5px;
@@ -408,7 +433,7 @@ main {
 }
 .menu_close:hover {
     cursor: pointer;
-    width: 180px;
+    width: 45px;
     transition: 0.5s;
 }
 .menu_close span:first-child {
@@ -432,6 +457,11 @@ main {
     left: 0;
     position: absolute;
     transform: rotate(-45deg);
+}
+.articles_text-open p {
+    margin-top: 5px;
+    text-indent: 10px;
+    padding: 5px 10px;
 }
 
 footer {
@@ -493,7 +523,25 @@ footer h1 {
 }
 form textarea {
     padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-top: 10px;
 }
+
+.confirmation {
+    display: flex;
+}
+.confirmation .input_text {
+    align-self: center;
+    margin-left: 10px;
+}
+.confirmation .input_text a {
+    color: blue;
+}
+form input[type="checkbox"] {
+    align-self: center;
+}
+
 .footer_nav-item {
     display: flex;
 }
@@ -502,4 +550,8 @@ form textarea {
 }
 .footer_nav-item-log {
     margin-right: 10px;
+}
+.error {
+    margin: 5px 5px;
+    color: red;
 }

@@ -611,12 +611,12 @@ footer h1 {
     text-align: center;
     margin-top: 5px;
 }
-.footer_message form input[type="submit"] {
+.footer_message form input[type="button"] {
     width: 150px;
     background-color: #fffcf2;
     cursor: pointer;
 }
-.footer_message form input[type="submit"]:hover {
+.footer_message form input[type="button"]:hover {
     width: 150px;
     background-color: #f5e8bd;
     cursor: pointer;
@@ -922,5 +922,154 @@ form input[type="checkbox"] {
         align-items: center;
         list-style-type: none;
         text-decoration: none;
+    }
+}
+@media (max-width: 620px) {
+    .container_width {
+        max-width: 520px;
+    }
+    h1 {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    main {
+        max-width: 520px;
+        margin: auto;
+        margin-top: auto;
+        margin-top: auto;
+        margin-top: auto;
+        margin-top: -20px;
+        background-image: url(img/House.png);
+        background-size: 130%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: -60px;
+    }
+    .main_text-one {
+        margin-top: 95px;
+        background-color: #f9f9f7;
+        width: 170px;
+        text-align: center;
+        padding: 10px;
+        opacity: 0.7;
+        margin-left: 45px;
+        font-size: 10px;
+    }
+    .main_text-two {
+        align-self: self-end;
+        margin-right: 8px;
+        width: 170px;
+        text-align: center;
+        padding: 10px;
+        background-color: #f9f9f7;
+        opacity: 0.7;
+        font-size: 10px;
+    }
+    .articles_list {
+        border: #f5e8bd 5px solid;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        width: 95%;
+    }
+    .header_contact li {
+        margin-right: 15px;
+    }
+}
+@media (max-width: 520px) {
+    .container_width {
+        max-width: 420px;
+    }
+    .header_container {
+        display: flex;
+        justify-content: center;
+    }
+    .header_contact {
+        flex-direction: column;
+    }
+    .header_contact li {
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 15px;
+        white-space: wrap;
+    }
+    .main_text-one p {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    .services_text span {
+        font-size: 12px;
+    }
+    header a {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 420px) {
+    .container_width {
+        max-width: 320px;
+    }
+    .about_text-one p {
+        width: auto;
+    }
+    .about_text-one img {
+        width: 310px;
+    }
+    .about_text-two img {
+        width: 310px;
+        padding-right: 0px;
+    }
+    .about_text-two p {
+        width: auto;
+    }
+
+    main {
+        max-width: 320px;
+        margin: auto;
+        margin-top: auto;
+        margin-top: auto;
+        margin-top: auto;
+        margin-top: auto;
+        margin-top: -20px;
+        background-image: url(img/House.png);
+        background-size: 130%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: -60px;
+    }
+    .main_text-one p {
+        font-size: 8px;
+    }
+    .main_text-two p {
+        font-size: 8px;
+    }
+    .center-line {
+        height: 2px;
+        background-color: #e1e0dc;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0px;
+        border-radius: 50px;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .articles_list h4 {
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .scroll-to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #f1deb0;
+        color: black;
+        padding: 7px 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 5px;
     }
 }

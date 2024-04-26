@@ -904,7 +904,7 @@ form input[type="checkbox"] {
         font-size: 10px;
     }
     .articles_list-show {
-        width: 720px;
+        width: 95%;
         transition: 1s;
     }
 
@@ -974,6 +974,16 @@ form input[type="checkbox"] {
     .header_contact li {
         margin-right: 15px;
     }
+    .close_one {
+        position: relative;
+        display: block;
+        width: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 5px;
+        margin: -5px 5px;
+        height: 30px;
+    }
 }
 @media (max-width: 520px) {
     .container_width {
@@ -1006,6 +1016,16 @@ form input[type="checkbox"] {
     }
     header a {
         font-size: 1rem;
+    }
+    .close_one {
+        position: relative;
+        display: block;
+        width: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 5px;
+        margin: -35px 10px;
+        height: 30px;
     }
 }
 @media (max-width: 420px) {
@@ -1071,5 +1091,15 @@ form input[type="checkbox"] {
         cursor: pointer;
         border-radius: 5px;
         font-size: 5px;
+    }
+    .close_one {
+        position: relative;
+        display: block;
+        width: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 5px;
+        margin: -5px 10px;
+        height: 30px;
     }
 }

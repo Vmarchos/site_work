@@ -611,12 +611,12 @@ footer h1 {
     text-align: center;
     margin-top: 5px;
 }
-.footer_message form input[type="button"] {
+.footer_message form input[type="submit"] {
     width: 150px;
     background-color: #fffcf2;
     cursor: pointer;
 }
-.footer_message form input[type="button"]:hover {
+.footer_message form input[type="submit"]:hover {
     width: 150px;
     background-color: #f5e8bd;
     cursor: pointer;
@@ -653,8 +653,7 @@ form input[type="checkbox"] {
     margin-right: 10px;
 }
 .error {
-    margin: 5px 5px;
-    color: red;
+    border: 2px solid red;
 }
 
 @media (max-width: 1080px) {

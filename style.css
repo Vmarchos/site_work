@@ -151,7 +151,9 @@ header a {
 }
 .header_contact li {
     margin-right: 20px;
+    font-size: 15px;
 }
+
 .header_contact li img {
     width: 60px;
 }
@@ -498,7 +500,7 @@ main {
     width: 550px;
     margin-left: 215px;
 }
-.articles_list h4 {
+.articles_list .articl {
     margin-left: 5px;
 }
 .articles_list-show {
@@ -660,6 +662,10 @@ form input[type="checkbox"] {
     .header_nav-item {
         margin: 15px;
     }
+    .header_contact li {
+        font-size: 12px;
+    }
+
     h1 {
         font-size: 25px;
         white-space: nowrap;
@@ -731,6 +737,14 @@ form input[type="checkbox"] {
 @media (max-width: 920px) {
     .container_width {
         max-width: 840px;
+    }
+    .header_contact li {
+        font-size: 9px;
+    }
+
+    .about_text-one p,
+    .about_text-two p {
+        margin-left: 40px;
     }
     h1 {
         font-size: 20px;
@@ -820,6 +834,10 @@ form input[type="checkbox"] {
     .container_width {
         max-width: 720px;
     }
+    .about_text-one p,
+    .about_text-two p {
+        margin-left: 40px;
+    }
     main {
         max-width: 720px;
         margin: auto;
@@ -861,6 +879,10 @@ form input[type="checkbox"] {
 @media (max-width: 720px) {
     .container_width {
         max-width: 620px;
+    }
+    .about_text-one p,
+    .about_text-two p {
+        margin-left: 40px;
     }
     header a {
         font-size: 0.6rem;
@@ -927,6 +949,19 @@ form input[type="checkbox"] {
     .container_width {
         max-width: 520px;
     }
+    .header_contact li {
+        font-size: 7px;
+    }
+    .text {
+        background-color: #717575;
+        opacity: 0.8;
+        font-size: 12px;
+    }
+
+    .about_text-one p,
+    .about_text-two p {
+        margin-left: 40px;
+    }
     h1 {
         font-size: 15px;
         white-space: nowrap;
@@ -988,6 +1023,25 @@ form input[type="checkbox"] {
     .container_width {
         max-width: 420px;
     }
+    .text {
+        background-color: #717575;
+        opacity: 0.8;
+        font-size: 10px;
+    }
+    .header_contact li img {
+        width: 100px;
+    }
+    .header_contact h6 {
+        font-size: 15px;
+    }
+    .header_contact li {
+        font-size: 10px;
+    }
+
+    .about_text-one p,
+    .about_text-two p {
+        margin-left: 40px;
+    }
     .header_container {
         display: flex;
         justify-content: center;
@@ -1030,6 +1084,25 @@ form input[type="checkbox"] {
 @media (max-width: 420px) {
     .container_width {
         max-width: 320px;
+    }
+    .text {
+        background-color: #717575;
+        opacity: 0.8;
+        font-size: 8px;
+    }
+    .header_contact li {
+        font-size: 10px;
+    }
+    .header_contact h6 {
+        font-size: 15px;
+    }
+    .header_contact li img {
+        width: 100px;
+    }
+
+    .about_text-one p,
+    .about_text-two p {
+        margin-left: 40px;
     }
     .about_text-one p {
         width: auto;

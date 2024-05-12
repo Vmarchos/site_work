@@ -151,6 +151,7 @@ header a {
   align-items: center;
   list-style-type: none;
   margin: auto;
+  margin-top: 20px;
 }
 
 .header_contact h6 {
